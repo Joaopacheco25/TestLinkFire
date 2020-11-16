@@ -9,12 +9,44 @@
     <Compile Remove="Data\**" />
     <EmbeddedResource Remove="Data\**" />
     <None Remove="Data\**" />
+    <Compile Remove="Clients\**" />
+    <EmbeddedResource Remove="Clients\**" />
+    <None Remove="Clients\**" />
+    <Compile Remove="Options\**" />
+    <EmbeddedResource Remove="Options\**" />
+    <None Remove="Options\**" />
+    <Compile Update="DataIngestionTest\UnitTest1.cs">
+      <Link>TestProject2\UnitTest1.cs</Link>
+    </Compile>
+    <Compile Remove="TestProject1\**" />
+    <EmbeddedResource Remove="TestProject1\**" />
+    <None Remove="TestProject1\**" />
+    <Compile Remove="packages\**" />
+    <EmbeddedResource Remove="packages\**" />
+    <None Remove="packages\**" />
+    <Compile Remove="DataIngestionTest\**" />
+    <EmbeddedResource Remove="DataIngestionTest\**" />
+    <None Remove="DataIngestionTest\**" />
+    <Compile Remove="Models\Artist.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove=".gitattributes" />
     <None Remove=".gitignore" />
     <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bzip2" Version="1.0.6.11" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+    <PackageReference Include="NEST" Version="7.9.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="ResponseResult" Version="1.0.4" />
+    <PackageReference Include="SharpZipLib" Version="1.3.0" />
   </ItemGroup>
 
 </Project>
