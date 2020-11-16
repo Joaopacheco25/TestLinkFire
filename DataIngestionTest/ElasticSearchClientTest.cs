@@ -7,7 +7,6 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using DataIngestion.TestAssignment.Models;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Moq.Protected;
 using Nest;
